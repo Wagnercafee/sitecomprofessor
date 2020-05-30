@@ -3,6 +3,12 @@
     src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
     font-size: 1em;
 }
+@font-face{
+    font-family: "OpenSans-Light";
+    src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+    font-size: 1em;
+}
+
 
 header{
     width: 100%;
@@ -19,11 +25,11 @@ header .container{
 header .header-black{
     background-color: #000;
     height: 40px;
-    background-image: url("imagens/clubs.png");
+
 }
 
 header .header-black li{
- 
+    background-image: url("imagens/clubs.png");
     background-repeat: no-repeat;
     display: inline-block;
     margin: 4px;
@@ -34,9 +40,6 @@ header .header-black li.club-01{
     background-position: 0px 0px;
 }
 header .header-black li.club-02{
-    background-position: -48px 0px;
-}
-header .header-black li.club-03{
     background-position: -48px 0px;
 }
 header .header-black li.club-03{
@@ -61,7 +64,7 @@ header .header-black li.club-09{
     background-position: -403px 0px;
 }
 header .header-black li.club-10{
-    background-position: 448px 0x;
+    background-position: -429px 0px;
 }
 header .header-black li.club-11{
     background-position: -493px 0px;
@@ -120,4 +123,94 @@ header .header-black li a{
     font-family: "OpenSans";
 }
 
+#menu li.search input{
+    background-color: #5c2d90;
+    color: #fff;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+}
 
+#menu li.search ::-webkit-input-placeholder{
+    color: #fff;
+}
+
+#menu li.search button{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 3px;
+    top: 7px;
+}
+
+#menu li.search button i{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+#menu li a{
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+#menu li.search .input-group{
+    top: 8px;  
+}
+
+#banner{
+    width: 100%;
+    height: 720px;
+    position: relative;
+    background: url("./imagens/banner.jpeg") no-repeat;
+    background-position: 0px -100px;
+    top: -130px;
+}
+
+#banner h1{
+    color: #fff;
+    top: 300px;
+    position: relative;
+    font-size: 92px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+    font-family: 'OpenSans-Light';
+    margin-left: 50px;
+}
+
+#news {
+    position: relative;
+    top: -110px;
+}
+
+#news h2{
+    color: #5E2799;
+    font-family: 'OpenSans-Light';
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#new hr{
+    border: #FDE192 solid 8px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#news .thumbnails{
+    margin-top: 20px;
+}
+
+#news .thumbnails h3{
+    color: #5E299A;
+    font-size: 18px;
+    font-family: 'OpenSans';
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#news .thumbnails time{
+    color: #A7A7A7;
+    font-size: 18px;
+    font-family: 'OpenSans';
+}
